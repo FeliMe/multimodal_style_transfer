@@ -13,10 +13,12 @@ if you just want to use the network with the pretrained models, open 'transform_
 If you want to train your own model on a styles image, you first need to download the [MS COCO Dataset](http://cocodataset.org/#download), store it in a folder named "/coco/" in the same directory where you cloned this project to. Then use 'train_multimodal.ipynb'. You might need to adapt the STYLE_WEIGHTS depending on you style image.
 
 ## Examples
-|Patch|<img src='styles/patch' width='256px'>|<img_scr="generated_images/multimodal_patch_256.jpg">|<img_scr="generated_images/multimodal_patch_512.jpg">|<img_scr="generated_images/multimodal_patch_1024.jpg">|
-|Scream|<img src='styles/scream' width='256px'>|<img_scr="generated_images/multimodal_scream_256.jpg">|<img_scr="generated_images/multimodal_scream_512.jpg">|<img_scr="generated_images/multimodal_scream_1024.jpg">|
-|Still life|<img src='styles/still_life' width='256px'>|<img_scr="generated_images/multimodal_still_life_256.jpg">|<img_scr="generated_images/multimodal_still_life_512.jpg">|<img_scr="generated_images/multimodal_still_life_1024.jpg">|
-|Mixed still life & starry night|<img src='styles/starry_night' width='256px'>|<img_scr="generated_images/multimodal_mixed_still_life_starry_night_256.jpg">|<img_scr="generated_images/multimodal_mixed_still_life_starry_night_512.jpg">|<img_scr="generated_images/multimodal_mixed_still_life_starry_night_1024.jpg">|
+|    | Style | Output Style Subnet | Output Enhance Subnet | Output Refine Subnet |
+|----|-------|---------------|---------------|----------------|
+|Patch|<img src='styles/patch.jpg' width='256px'>|<img src='generated_images/multimodal_patch_256.jpg' width='256px'>|<img src='generated_images/multimodal_patch_512.jpg' width='256px'>|<img src='generated_images/multimodal_patch_1024.jpg' width='256px'>|
+|Scream|<img src='styles/scream.jpg' width='256px'>|<img src='generated_images/multimodal_scream_256.jpg' width='256px'>|<img src='generated_images/multimodal_scream_512.jpg' width='256px'>|<img src='generated_images/multimodal_scream_1024.jpg' width='256px'>|
+|Still Life|<img src='styles/still_life_with_skull.jpg' width='256px'>|<img src='generated_images/multimodal_still_life_256.jpg' width='256px'>|<img src='generated_images/multimodal_still_life_512.jpg' width='256px'>|<img src='generated_images/multimodal_still_life_1024.jpg' width='256px'>|
+|Mixed|<img src='styles/starry_night.jpg' width='256px'>|<img src='generated_images/multimodal_mixed_still_life_starry_night_256.jpg' width='256px'>|<img src='generated_images/multimodal_mixed_still_life_starry_night_512.jpg' width='256px'>|<img src='generated_images/multimodal_mixed_still_life_starry_night_1024.jpg' width='256px'>|
 
 ## Implementation Details
 There are some deviations from the original paper in this implementation. I chose a different layer for the content representation as it generated better results. I also added a regularization loss as in [Johnson et al.](https://arxiv.org/abs/1603.08155). 

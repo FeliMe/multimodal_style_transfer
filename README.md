@@ -1,9 +1,11 @@
 # Deep Neural Style Transfer
 This is a PyTorch implementation of the paper ['Multimodal Transfer: A Hierarchical Deep Convolutional Neural Network for Fast Artistic Style Transfer'](https://arxiv.org/abs/1612.01895) by Wang et al.
 
+<a href="https://imgflip.com/gif/2dnl11"><img src="https://i.imgflip.com/2dnl11.gif" title="made at imgflip.com"/></a>
+
 ## Usage
 ```
-$ git clone https://gitlab.lrz.de/ge56qib/Seminar_CTDL/tree/master
+$ git clone https://github.com/FeliMe/multimodal_style_transfer.git
 ```
 
 ## Transfer styles
